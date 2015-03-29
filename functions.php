@@ -102,7 +102,7 @@ add_action( 'widgets_init', 'casemason_widgets_init' );
 function casemason_scripts() {
 	wp_enqueue_style( 'casemason-style', get_stylesheet_uri() ) ;
 
-	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/grid.css' );
+	
 
 	wp_enqueue_script( 'casemason-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
