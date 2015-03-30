@@ -78,6 +78,8 @@ function casemason_setup() {
 endif; // casemason_setup
 add_action( 'after_setup_theme', 'casemason_setup' );
 
+
+
 /**
  * Register widget area.
  *
@@ -99,11 +101,16 @@ add_action( 'widgets_init', 'casemason_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+wp_deregister_script( 'jquery' );
+$jquery_cdn = '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js';
+wp_enqueue_script( 'jquery', $jquery_cdn, array(), '20130115', true );
+
+
 function casemason_scripts() {
 	wp_enqueue_style( 'casemason-style', get_stylesheet_uri() ) ;
 
+	wp_enqueue_script( 'barrel-slider', get_template_directory_uri() . '/js/barrel-slider.js', array(), '1.0.0', true );
 	
-
 	wp_enqueue_script( 'casemason-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'casemason-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

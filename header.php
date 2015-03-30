@@ -38,6 +38,7 @@
 				</div><!-- .site-branding -->
 			</div>
 
+
 			<div class="grid_6 color">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Primary Menu', 'casemason' ); ?></button>
@@ -47,8 +48,6 @@
 		</div>
 	</header><!-- #masthead -->
 	
-
-
 
 
 
