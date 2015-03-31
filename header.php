@@ -22,11 +22,22 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'casemason' ); ?></a>
 	
-	<div class="blue-bar">
-		<div class="container_12">
-			<div class="call-header grid_12">Call  <strong>410-687-0007</strong></div>
+	<div id="nav-search container_12">
+		<div class="grid_12">			
 		</div>
 	</div>
+	
+
+	<div class="blue-bar">
+		<div class="container_12">
+			<div class="call-header grid_12">Call  <strong>410-687-0007</strong>
+				<div class="nav-search">
+					<?php get_search_form(); ?>
+				</div>
+			</div>		
+		</div>
+	</div>
+	
 	
 		
 	<header id="masthead" class="site-header one-edge-shadow" role="banner">
